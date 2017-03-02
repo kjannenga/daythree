@@ -1,0 +1,93 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+form {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	padding-top:20px;
+	padding-left:40px;
+	color:rgb(254,254,254);
+	background-color:rgb(92,163,214);
+
+	
+}
+body {
+	background-color:rgb(92,163,214);
+	color:rgb(254,254,254);
+	font-size:14px;
+	font-weight:300;
+	padding-top:15px;
+	margin-top:15px;
+	
+
+	
+
+}
+label{
+	text-transform:uppercase;
+	text-align:left;
+	font-size:12px;
+	
+
+}
+
+input {
+	background-color:rgb(92,163,214);
+	color: rgb(27,69,119);
+	border:3px solid white;
+	height:30px;
+	margin-top:5px;
+	margin-bottom:20px;
+	
+	
+
+}
+
+input, select, textarea {
+	color:rgb(254,254,254);
+}
+
+select {
+	background-color:rgb(92,163,214);
+	color:rgb(254,254,254);
+	margin-top:5px;
+	margin-bottom:20px;
+	
+
+}
+
+
+
+.firstcolumn, .secondcolumn, .thirdcolumn{
+	flex:1 0 33%;
+	padding:0px;
+}
+
+:focus{
+	border:3px solid rgb(44,109,157);
+	outline:none;
+
+}
+
+input:hover , select:hover {border:3px solid rgb(44,109,157);
+	outline:none;
+}
+
+::-webkit-input-placeholder{
+	color:rgb(42,106,152);
+	font-style:italic;
+}
+
+textarea {
+	background-color:rgb(92,163,214);
+	border:3px solid white;
+	margin-top:5px;
+	margin-bottom:20px;
+}
+
