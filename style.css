@@ -5,28 +5,42 @@ html {
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-form {
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap:wrap;
-	color:rgb(254,254,254);
-	background-color:rgb(92,163,214);
 
-	
-}
 body {
 	font-size:14px;
 	font-weight:300;
-
 }
+
+form {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap:wrap;
+	background:rgb(92,163,214)
+}
+
+div{
+	margin:10px 30px;
+}
+
 label{
 	
 	text-transform:uppercase;
-	text-align:left;
 	font-size:12px;
-	
+	display:block;
+	color:white;	
+	margin:20px 0 5px;
 
+}
+
+input, textarea {
+	border:3px solid white;
+}
+
+input, textarea, select {
+	background:transparent;
+	width:250px;
+	color:rgb(254,254,254);
 }
 
 input {
@@ -34,40 +48,20 @@ input {
 	color: rgb(27,69,119);
 	border:3px solid white;
 	height:30px;
-	margin-top:5px;
-	margin-bottom:20px;
 	
-	
-
 }
 
-input, select, textarea {
-	color:rgb(254,254,254);
-}
-
-select {
-	background-color:rgb(92,163,214);
-	color:rgb(254,254,254);
-	margin-top:5px;
-	margin-bottom:20px;
-	
-
-}
-
-
-
-.firstcolumn, .secondcolumn, .thirdcolumn{
-	flex:1 0 33%;
-	padding:10px;
+textarea{
+	height:150px;
 }
 
 :focus{
 	border:3px solid rgb(44,109,157);
-	outline:none;
-
+	outline:0;
 }
 
-input:hover , select:hover {border:3px solid rgb(44,109,157);
+input:hover , select:hover {
+	border:3px solid rgb(44,109,157);
 	outline:none;
 }
 
@@ -76,12 +70,5 @@ input:hover , select:hover {border:3px solid rgb(44,109,157);
 	font-style:italic;
 }
 
-textarea {
-	background-color:rgb(92,163,214);
-	border:3px solid white;
-	margin-top:5px;
-	margin-bottom:20px;
-	color:rgb(254,254,254);
 
-}
 
